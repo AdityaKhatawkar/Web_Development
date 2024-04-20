@@ -1,0 +1,9 @@
+/* 
+background color changes the background color of the site.
+color changes the color of the text.
+*/
+
+body{
+    background-color: pink;
+    color: blue;
+}
