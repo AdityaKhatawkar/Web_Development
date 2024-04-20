@@ -1,0 +1,93 @@
+<!-- 
+img is a tag used to insert images to the website.
+<img src="" alt="">
+here src is the path to the image, and alt is the text to be displayed if the image is not there. 
+
+width attribute is used to set the size of the image.
+height attribute is used to set the height of the image.
+if either one of these are set, then the other one gets get automtically.
+
+
+table tag is used to display data in a tabular form.
+table contains tr(table row) tag which is used for row values.
+th (table heading) tag can be used within tr tag to make the row attributes as heading.
+td (table data) tag is used for data in the table. Also is under tr tag.
+
+
+rowspan is used if we want the data to take up multiple row spaces
+colspan is used if we want the data to take up multiple column spaces.
+similar to merge cells in excel.
+
+caption is used inside the table tag to give a heading to the table.
+
+thead is used to give headers.
+tfoot is used to give footers.
+tbody is used for the body.
+tr can be put inside them to group them together.
+
+br tag is used to break the line so the text after it goes to the next line.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="03_style.css">
+</head>
+
+<body>
+    <img width="230" height="200" src="railway.png" alt="Train Image"> <!--set image-->
+
+<br> <!--br tag-->
+    <table> 
+
+        <caption>Employee Details</caption> <!-- caption -->
+
+    <thead>
+        <tr> <!-- table row -->
+            <th>Name</th> <!-- table heading -->
+            <th>Designation</th>
+            <th>Language</th>
+
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr>
+            <!--aditya will take 2 columns and programmer, python will take 2 rows-->
+            <td colspan="2" >Aditya</td> <!-- table data -->
+            <td rowspan="2">Programmer</td>
+            <td rowspan="2">Python</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Sam</td> 
+        </tr>
+
+        <tr>
+            <td >Ansh</td>
+            <td>Programmer</td>
+            <td>CPP</td>
+        </tr>
+    </tbody>
+
+
+
+    <tfoot>
+            <tr>
+                <td >Ansh</td>
+                <td>Programmer</td>
+                <td>CPP</td>
+            </tr>   
+    </tfoot>
+
+
+    </table>
+    
+    
+</body>
+</html>
