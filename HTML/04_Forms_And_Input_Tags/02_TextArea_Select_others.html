@@ -1,0 +1,83 @@
+<!--
+Textarea is used when taking multiple line input from the user and the length of the input is unpredictable.
+
+Select is used to create a dropdown menu when selecting from a predetermined set of options.
+Option is used to provide an option to be used in a select menu.
+
+Other common attributes:
+action:
+The action attribute specifies the URL where the form data should be sent after submission.
+
+<form action="/submit.php" method="POST">
+</form>
+
+
+method:
+The method attribute defines how data is sent. The two most common methods are GET and POST.
+
+<form action="/submit.php" method="POST">
+</form>
+
+
+name:
+The name attribute specifies the name for the form element, making it easier to reference in scripts or the server-side code.
+
+
+<input type="text" name="username">
+
+
+placeholder:
+This attribute provides a hint to the user as to what can be entered in the field.
+
+<input type="text" placeholder="Enter your username">
+
+
+required:
+The required attribute makes a field mandatory to fill out.
+
+<input type="text" required>
+
+
+autofocus:
+The autofocus attribute automatically focuses the cursor on the particular input when the page loads.
+
+<input type="text" autofocus>
+
+pattern:
+The pattern attribute specifies a regular expression that the input must match to be valid.
+
+<input type="text" pattern="[a-zA-Z0-9]+">
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Aditya Khatawkar</title>
+</head>
+
+<body>
+    <label for="comment">Enter your comment:</label>
+
+    <br>
+
+    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Feedback...."></textarea>
+
+    <br>
+
+
+    <select name="fruits" id="fruits">
+        <option value="apple">Apple</option>
+        <option value="orange">Orange</option>
+        <option value="banana">Banana</option>
+    </select>
+
+
+    <input type="submit" value="submit">
+
+
+</body>
+
+</html>
