@@ -1,0 +1,26 @@
+<!--
+Inline elements:
+Inline Elements don't start on a new line. It only takes the width required to cover the content.
+
+Block elements: 
+No matter what the width is, block elements will always start on a new line and take up the full available width of their container by default. This means they essentially claim all the horizontal space for themselves, pushing any content that comes after them to a new line. 
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block elements</title>
+    <link rel="stylesheet" href="02_style.css">
+</head>
+<body>
+    <p>This is a paragraph.</p>  <!--will get the color for the whole block-->
+    <a href="https://google.com">Google</a> <!--will get color only till where the text exists-->
+    <div>This is a block element and will start from the next line.</div>
+    <span>This is an inline element</span>
+    <a href="">Yes span is inline.</a>
+</body>
+</html>
