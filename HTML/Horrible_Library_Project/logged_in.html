@@ -1,0 +1,39 @@
+<!--
+No matter what book is picked, submit will always go to the same page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logged in</title>
+</head>
+
+<body>
+    <h1>Welcome to the library!</h1>
+    <h2>Pick a book among these:</h2>
+    <div>
+        <ol type="1">
+            <li>The Alchemist</li>
+            <li>Atomic Habits</li>
+            <li>Hitchhiker's guide to the galaxy</li>
+        </ol>
+    </div>
+    <br>
+    <form action="selected.html" method="post">
+        <div>
+            <label for="books">Pick a book: </label>
+            <select name="books" id="books">
+                <option value="The alchemist.">The Alchemist</option>
+                <option value="Atomic Habits">Atomic Habits</option>
+                <option value="HHGTTG">Hitchhiker's guide to the galaxy</option>
+            </select>
+            <input type="submit" name="sub" id="sub" value="submit">
+        </div>
+    </form>
+</body>
+
+</html>
