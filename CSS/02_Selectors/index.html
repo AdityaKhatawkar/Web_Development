@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector: applied on all the elements of the mentioned type  */  
+        /* div{    
+             background-color: red; 
+        } */
+
+        /* Class Selector : only applies to a specified class*/
+        .red{
+            background-color: red;
+        }
+
+        /* Id Selector : only applies to a specified id*/
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selectors: Applies to the mentioned child, here p is inside div  */
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendant Selector  */
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Universal Selector: is applied to the whole website */
+        * {
+            margin:0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector: are used for anchor tags  */
+        a:visited{ /*If the link is visited*/
+            color: yellow
+        }
+
+        a:link { /*color of unvisited link*/
+            color: green;
+        }
+
+        a:active{ /*Color of link when clicked*/
+            background-color: red;
+        }
+
+        a:hover{ /*Color when howering over the link*/
+            background-color: yellow;
+        }
+
+
+        p:first-child{ /*Applied to the first element within the mentioned element*/
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+</body>
+</html>

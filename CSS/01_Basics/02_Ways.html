@@ -1,0 +1,65 @@
+<!-- 
+There are 3 ways to add css to a html file:
+
+1) Inline CSS:  Insert the "style" attribute within the HTML element's opening tag.
+
+2) Internal CSS: Internal CSS is defined in a style block, which will be inside the head section.
+
+3) External CSS: Instead of adding the styles within the HTML file, we create a separate file with .css extension.
+This file will hold all the styling details. Then, we link this file to the HTML page, giving it the instructions on how to look. 
+
+
+There is a new <link> tag in the head section, and this link tag has rel and href properties.
+
+The following points will explain each keyword's meaning: 
+
+<link>: This tag is used to create links between different resources, like stylesheets, fonts, and more. In our case, we are using a link tag to 
+link the CSS file with the HTML file.
+
+rel="stylesheet": rel stands for relationship,  this defines the type of relationship between the HTML document and the linked resource. When set to "stylesheet", 
+it specifies that the linked resource is a stylesheet that will be used to style the HTML content.
+
+href="style.css" : The href attribute stands for "hypertext reference." It specifies the path or URL to the external resource we want to link.
+In this case, it's the path to the external CSS file called "style.css".
+
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways to add CSS</title>
+
+    
+    <link rel="stylesheet" href="02_Ways.css">
+
+    <style>
+        h2 {
+            /*will be applied to every single h2 tag*/
+            color: crimson;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <h1 style="color: blueviolet; background-color: aquamarine;">This is inline CSS</h1>
+    <!--will only be applied to this tag-->
+
+    <h2>This is internal CSS</h2>
+
+    <p style="color: red;">This is external CSS</p> <!--This will overwrite the external CSS!!!-->
+    <p>Hello there</p>
+
+</body>
+
+</html>

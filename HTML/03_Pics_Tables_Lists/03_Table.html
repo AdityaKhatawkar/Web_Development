@@ -1,7 +1,9 @@
 <!-- 
 img is a tag used to insert images to the website.
 <img src="" alt="">
-here src is the path to the image, and alt is the text to be displayed if the image is not there. 
+here src is the path to the image, and alt is the text to be displayed if the image is not there, alt
+will allow the search engines to know what the image is. 
+
 
 width attribute is used to set the size of the image.
 height attribute is used to set the height of the image.
@@ -35,66 +37,70 @@ for columns, rows, or groups of columns or rows.
 
 -->
 
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images</title>
-    <link rel="stylesheet" href="03_style.css">
-</head>
+    <link rel="stylesheet" href="03_style.css" />
+  </head>
 
-<body>
-    <img width="230" height="200" src="railway.png" alt="Train Image"> <!--set image-->
+  <body>
+    <img width="230" height="200" src="railway.png" alt="Train Image" />
+    <!--set image-->
 
-<br> <!--br tag-->
-    <table> 
+    <br />
+    <!--br tag-->
+    <table>
+      <caption>
+        Employee Details
+      </caption>
+      <!-- caption -->
 
-        <caption>Employee Details</caption> <!-- caption -->
-
-    <thead>
-        <tr> <!-- table row -->
-            <th>Name</th> <!-- table heading -->
-            <th>Designation</th>
-            <th>Language</th>
-
-        </tr>
-    </thead>
-
-
-    <tbody>
+      <thead>
         <tr>
-            <!--aditya will take 2 columns and programmer, python will take 2 rows-->
-            <td colspan="2" >Aditya</td> <!-- table data -->
-            <td rowspan="2">Programmer</td>
-            <td rowspan="2">Python</td>
+          <!-- table row -->
+          <th>Name</th>
+          <!-- table heading -->
+          <th>Designation</th>
+          <th>Language</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <!--aditya will take 2 columns and programmer, python will take 2 rows-->
+          <td colspan="2">Aditya</td>
+          <!-- table data -->
+          <td rowspan="2">Programmer</td>
+          <td rowspan="2">Python</td>
         </tr>
 
         <tr>
-            <td colspan="2">Sam</td> 
+          <td colspan="2">Sam</td>
         </tr>
 
         <tr>
-            <td >Ansh</td>
-            <td>Programmer</td>
-            <td>CPP</td>
+          <td>Ansh</td>
+          <td>Programmer</td>
+          <td>CPP</td>
         </tr>
-    </tbody>
+      </tbody>
 
-
-
-    <tfoot>
-            <tr>
-                <td >Ansh</td>
-                <td>Programmer</td>
-                <td>CPP</td>
-            </tr>   
-    </tfoot>
-
-
+      <tfoot>
+        <tr>
+          <td>Ansh</td>
+          <td>Programmer</td>
+          <td>CPP</td>
+        </tr>
+      </tfoot>
     </table>
-    
-    
-</body>
+    <img
+      src="railway.png"
+      width="500"
+      height="200"
+      alt="Image of a train in a railway station"
+    />
+  </body>
 </html>

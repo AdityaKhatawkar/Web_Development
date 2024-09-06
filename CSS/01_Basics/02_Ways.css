@@ -1,0 +1,4 @@
+p{ /*Will be applied to all p tags*/
+    color: rgb(86, 8, 49);
+    background-color: darkturquoise;
+}
