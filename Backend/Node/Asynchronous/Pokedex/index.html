@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pokedex</title>
+</head>
+<body>
+    <div id="container">
+        <!-- First half pokedex -->
+         <div id="pokedexOne">
+            <div id="top">
+                <div id="topSquare">
+                    <div id="buttonWhite">
+                        <div id="buttonBlue"></div>
+                    </div>
+                </div>
+
+                <div id="topSquareTwo">
+                    <div id="buttonRed"></div>
+                    <div id="buttonGreen"></div>
+                    <div id="buttonYellow"></div>
+                </div>
+
+                <div id="screen">
+                    <div id="buttonRedScreen"></div>
+                    <div id="barOne"></div>
+                    <div id="barTwo"></div>
+                    <div id="screenTwo">
+                        <img src="" id="pokemonImg" alt="Image of the searched pokemon">
+                    </div>
+                </div>
+            </div>
+
+            <div id="bottom">
+                <div id="buttonBlueTwo"></div>
+                <div id="buttonYellowTwo"></div>
+                <div id="dpadHorizontal"></div>
+                <div id="dpadVertical"></div>
+                <div id="select"></div>
+                <div id="start"></div>
+            </div>
+
+         </div>
+
+         <!-- Hinge -->
+          <div id="hinge"></div>
+
+        <!-- Second half pokedex -->
+
+        <div id="pokedexTwo">
+            <div id="topSquare">
+                <div id="hidden"></div>
+            </div>
+
+            <div id="searchBar">
+                <input type="text" id="searchName" placeholder="Enter Pokemon">
+                <button onclick="getPokemon()" id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+
+            <div id="sectionTwo">
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+            </div>
+
+            <div id="sectionThree">
+                <div id="twoSquares">
+                    <div class="two"></div>
+                    <div class="two"></div>
+                </div>
+                <div id="buttomYellowBtn"></div>
+            </div>
+
+            <div id="sectionFour">
+                <div class="bottomTwo"></div>
+                <div class="bottomTwo"></div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
