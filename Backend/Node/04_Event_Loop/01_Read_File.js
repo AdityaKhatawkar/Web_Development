@@ -4,7 +4,11 @@
 const { readFile, writeFile } = require('fs')
 
 console.log('started a first task')
-// CHECK FILE PATH!!!!
+
+//Read file is async and doesn't block the code execution and gets offloaded to the event loop and gets executed
+// in a separate thread of execution. while the file is being read, the program will continue to the next line after the 
+//callback!!!!!!!!!!!!!!!!
+
 readFile('./content/first.txt', 'utf8', (err, result) => {
   if (err) {
     console.log(err)
@@ -13,4 +17,5 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
   console.log(result)
   console.log('completed first task')
 })
+
 console.log('starting next task')
