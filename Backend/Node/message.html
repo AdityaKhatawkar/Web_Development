@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Send SMS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    label {
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"], textarea {
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Send SMS</h2>
+  <form action="/send-sms" method="post">
+    <label for="toNumber">To:</label>
+    <input type="text" id="toNumber" name="toNumber" placeholder="Recipient phone number" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+    
+    <input type="submit" value="Send SMS">
+  </form>
+</body>
+</html>
