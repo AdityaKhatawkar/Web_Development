@@ -7,7 +7,7 @@ require('dotenv').config(); //Loads environment variables from a .env file into 
 const express = require('express');
 const bodyParser = require('body-parser');
 const twilio = require('twilio');
-
+const path = require('path');
 
 
 const app = express();
@@ -17,6 +17,13 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = twilio(accountSid, authToken);
 
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(express.static(__dirname))
+
+app.get('/',(req,res)=>{
+  res.sendFile(Path.join(__dirname,"index.html"))
+})
+
 
 app.post('/send-sms', (req, res) => {
   const { to, body } = req.body;

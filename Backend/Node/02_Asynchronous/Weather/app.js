@@ -12,9 +12,10 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 ];
 
 let dateObj = new Date();
-let month = monthNames[dateObj.getUTCMonth()];
-let day = dateObj.getUTCDate() - 1;
-let year = dateObj.getUTCFullYear();
+let istdate = new Date(dateObj.toLocaleString("en-US",{timeZone:"Asia/Kolkata"}))
+let month = monthNames[istdate.getMonth()];
+let day = istdate.getDate();
+let year = istdate.getFullYear();
 
 date.innerHTML = `${month} ${day}, ${year}`;
 
@@ -25,7 +26,7 @@ const getWeather = async () => {
 
     try {
         const cityName = document.getElementById('search-bar-input').value;    
-        const weatherDataFetch = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=3f161e476675a3593a4072ca112d20b4`, {
+        const weatherDataFetch = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=3f161e476675a3593a4072ca112d20b4&units=metric`, {
             headers: {
                 Accept: "application/json"
               }
